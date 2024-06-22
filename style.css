@@ -1,0 +1,13 @@
+.hidden {
+  display: none;
+}
+.background {
+  background-image: url("img/bg.jpg");
+  background-size: cover;
+  background-position: center;
+  filter: blur(8px);
+}
+.content {
+  backdrop-filter: blur(10px);
+  -webkit-backdrop-filter: blur(10px);
+}

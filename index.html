@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Cek Khodam</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/daisyui@1.14.2/dist/full.css"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body class="bg-gray-100 flex items-center justify-center h-screen relative">
+    <!-- Background -->
+    <div class="background absolute inset-0 z-0"></div>
+
+    <!-- Halaman Selamat Datang -->
+    <div
+      id="welcomePage"
+      class="content bg-white bg-opacity-70 p-6 rounded-lg shadow-lg text-center max-w-md mx-auto z-10"
+    >
+      <h1 class="text-4xl font-bold mb-4">
+        Selamat Datang di Website Cek Khodam!
+      </h1>
+      <button id="startButton" class="btn btn-primary">
+        Cek Khodam Sekarang
+      </button>
+    </div>
+
+    <!-- Halaman Cek Khodam -->
+    <div
+      id="khodamPage"
+      class="content bg-white bg-opacity-70 p-6 rounded-lg shadow-lg text-center max-w-md mx-auto hidden z-10"
+    >
+      <h1 class="text-3xl font-bold mb-4">Cek Khodam Anda!</h1>
+      <form id="khodamForm">
+        <div class="mb-4">
+          <input
+            type="text"
+            id="nama"
+            class="input input-bordered w-full"
+            placeholder="Masukkan nama Anda"
+            required
+          />
+        </div>
+        <div
+          id="resetText"
+          class="text-sm underline mb-2 text-right text-blue-500 cursor-pointer"
+        >
+          Reset
+        </div>
+        <button type="submit" class="btn btn-primary mt-2">Cek Khodam</button>
+      </form>
+      <div id="hasilCek" class="text-lg mt-4"></div>
+      <p class="mt-4 text-gray-500">Created by ahmatfauzy</p>
+    </div>
+
+    <script src="script.js"></script>
+  </body>
+</html>
